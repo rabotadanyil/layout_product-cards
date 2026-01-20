@@ -1,98 +1,77 @@
 .card {
+  box-sizing: border-box;
   width: $card-width;
-  border: 1px solid $border;
-  padding: $card-padding;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 32px 16px 16px;
   display: flex;
   flex-direction: column;
 
-  &__image {
-    width: $img-width;
-    height: $img-height;
-    margin-bottom: $spacing-xl;
-    margin-top: $spacing-m;
-    margin-left: 3px; // Specific offset
+  &__img {
+    width: 160px;
+    height: 134px;
+    margin-bottom: 40px;
+    margin-inline: 3px;
   }
 
-  &__title {
-    font-weight: $font-weight-med;
-    font-size: $font-size-s;
-    line-height: $line-height-l;
-    color: $main-ac;
-    margin-bottom: $spacing-xs;
+  &__description {
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 4px;
   }
 
   &__code {
-    font-size: $font-size-xs;
-    line-height: $line-height-s;
-    color: $secondary;
-    margin-bottom: $spacing-m;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: $secondary-color;
+    margin-bottom: 16px;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: $spacing-m;
+    margin-top: 24px;
+    color: $main-color;
 
-    &-text {
-      font-weight: $font-weight-reg;
-      font-size: $font-size-s;
-      line-height: $line-height-l;
-      color: $secondary;
+    &-label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: $secondary-color;
     }
 
     &-value {
-      font-weight: $font-weight-bold;
-      font-size: $font-size-l;
-      line-height: $line-height-l;
-      text-align: right;
-      color: $main-ac;
-      text-decoration: none;
-      vertical-align: bottom;
-      letter-spacing: 1%;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
     }
   }
 
-  &__rating {
-    width: 166px; // Calculated based on stars
-    height: $star-size;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: $spacing-l;
-  }
-
-  &__reviews {
-    font-weight: $font-weight-reg;
-    font-size: $font-size-xs;
-    line-height: $line-height-s;
-    text-align: right;
-    color: $main-ac;
-    margin-top: 2px;
-  }
-
-  &__buy {
-    width: 100%;
-    height: $spacing-xl;
-    border-radius: $border-radius-s;
-    background-color: $blue;
-    text-decoration: none;
-
-    font-weight: $font-weight-bold;
-    font-size: $font-size-m;
-    line-height: $line-height-m;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 16px;
+    box-sizing: border-box;
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    height: 40px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
 
     &:hover {
-      background-color: $white;
-      color: $blue;
-      border: 1px solid $blue;
+      color: $button-color;
+      background-color: $background-color;
     }
   }
 }
