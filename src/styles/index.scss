@@ -1,13 +1,14 @@
-@use './card';
-@use './stars';
+@use 'variables' as *;
+@use 'card';
+@use 'stars';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0; // Reset browser default margins
+  margin: 0;
   padding: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: $font-main;
   -webkit-font-smoothing: antialiased;
 }

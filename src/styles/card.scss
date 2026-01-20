@@ -1,44 +1,47 @@
+@use 'variables' as *;
+
 .card {
   width: 200px;
   height: 408px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $color-border;
   border-radius: 5px;
   box-sizing: border-box;
 
   &__image {
     width: 160px;
     height: 134px;
-    margin-top: 32px;
+    margin-top: $spacing-lg;
   }
 
   &__article {
-    margin-top: 40px;
+    margin-top: $spacing-xl;
     line-height: 18px;
-    color: #060b35;
+    color: $color-text-main;
     font-size: 12px;
     text-align: left;
     font-weight: 500;
+    font-family: $font-accent;
     width: 166px;
     height: 36px;
   }
 
   &__code {
-    margin-top: 4px;
-    margin-left: 16px;
+    margin-top: $spacing-xs;
+    margin-left: $spacing-sm;
     width: 98px;
     height: 14px;
     align-self: start;
     line-height: 14px;
     font-size: 10px;
     font-weight: 400;
-    color: #616070;
+    color: $color-text-secondary;
   }
 
   &__review {
-    margin-top: 16px;
+    margin-top: $spacing-sm;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -49,7 +52,7 @@
     line-height: 14px;
     font-size: 10px;
     font-weight: 400;
-    color: #060b35;
+    color: $color-text-main;
     text-align: right;
   }
 
@@ -58,21 +61,21 @@
     justify-content: space-between;
     align-items: center;
     width: 166px;
-    margin-top: 24px;
+    margin-top: $spacing-md;
   }
 
   &__price-text {
     line-height: 18px;
     font-size: 12px;
     font-weight: 400;
-    color: #616070;
+    color: $color-text-secondary;
   }
 
   &__price-value {
     line-height: 18px;
     font-size: 16px;
     font-weight: 700;
-    color: #060b35;
+    color: $color-text-main;
   }
 
   &__button {
@@ -81,8 +84,8 @@
     align-items: center;
     width: 166px;
     height: 40px;
-    margin-top: 16px;
-    background-color: #00acdc;
+    margin-top: $spacing-sm;
+    background-color: $color-accent;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
@@ -90,13 +93,13 @@
     line-height: 16px;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
-  }
+    color: $color-white;
 
-  &__button:hover {
-    box-sizing: border-box;
-    background-color: white;
-    color: #00acdc;
-    border: 1px solid #00acdc;
+    &:hover {
+      box-sizing: border-box;
+      background-color: $color-white;
+      color: $color-accent;
+      border: 1px solid $color-accent;
+    }
   }
 }

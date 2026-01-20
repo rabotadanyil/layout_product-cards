@@ -1,14 +1,16 @@
+@use 'variables' as *;
+
 .stars {
   margin: 0;
   display: flex;
-  gap: 4px;
+  gap: $spacing-xs;
   list-style: none;
   padding: 0;
 
   &__item {
-    width: 16px;
-    height: 16px;
-    background-image: url(../images/star.svg);
+    width: $spacing-sm;
+    height: $spacing-sm;
+    background-image: url("../images/star.svg"); // Кавычки добавлены
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,7 +19,7 @@
   @for $i from 1 through 5 {
     &--#{$i} {
       .stars__item:nth-child(-n + #{$i}) {
-        background-image: url('../images/star-active.svg');
+        background-image: url("../images/star-active.svg"); // Кавычки добавлены
       }
     }
   }
