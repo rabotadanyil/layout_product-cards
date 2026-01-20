@@ -1,25 +1,26 @@
-@use 'variables' as *;
-
 .stars {
-  margin: 0;
   display: flex;
-  gap: $spacing-xs;
-  list-style: none;
-  padding: 0;
 
-  &__item {
-    width: $spacing-sm;
-    height: $spacing-sm;
-    background-image: url("../images/star.svg"); // Кавычки добавлены
-    background-size: auto;
+  &__star {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/star.svg');
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
+    border-radius: 0.5px;
+    transform: scale(0.86);
+
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
   }
 
   @for $i from 1 through 5 {
     &--#{$i} {
-      .stars__item:nth-child(-n + #{$i}) {
-        background-image: url("../images/star-active.svg"); // Кавычки добавлены
+      .stars__star:nth-child(-n + #{$i}) {
+        background-image: url('../images/star-active.svg');
       }
     }
   }
