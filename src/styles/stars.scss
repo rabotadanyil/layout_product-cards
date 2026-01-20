@@ -3,8 +3,8 @@
 
   &__star {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: $star-size;
+    height: $star-size;
     background-image: url('../images/star.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -13,7 +13,7 @@
     transform: scale(0.86);
 
     &:not(:last-child) {
-      margin-right: 4px;
+      margin-right: $star-spacing;
     }
   }
 

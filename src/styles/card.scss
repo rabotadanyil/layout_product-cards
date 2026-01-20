@@ -1,50 +1,50 @@
 .card {
   width: $card-width;
   border: 1px solid $border;
-  padding: 16px;
+  padding: $card-padding;
   display: flex;
   flex-direction: column;
 
   &__image {
-    width: 160px;
-    height: 134px;
-    margin-bottom: 40px;
-    margin-top: 16px;
-    margin-left: 3px;
+    width: $img-width;
+    height: $img-height;
+    margin-bottom: $spacing-xl;
+    margin-top: $spacing-m;
+    margin-left: 3px; // Specific offset
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    font-weight: $font-weight-med;
+    font-size: $font-size-s;
+    line-height: $line-height-l;
     color: $main-ac;
-    margin-bottom: 4px;
+    margin-bottom: $spacing-xs;
   }
 
   &__code {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: $font-size-xs;
+    line-height: $line-height-s;
     color: $secondary;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-m;
   }
 
   &__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-m;
 
     &-text {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 18px;
+      font-weight: $font-weight-reg;
+      font-size: $font-size-s;
+      line-height: $line-height-l;
       color: $secondary;
     }
 
     &-value {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 18px;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-l;
+      line-height: $line-height-l;
       text-align: right;
       color: $main-ac;
       text-decoration: none;
@@ -54,18 +54,18 @@
   }
 
   &__rating {
-    width: 166px;
-    height: 16px;
+    width: 166px; // Calculated based on stars
+    height: $star-size;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: $spacing-l;
   }
 
   &__reviews {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
+    font-weight: $font-weight-reg;
+    font-size: $font-size-xs;
+    line-height: $line-height-s;
     text-align: right;
     color: $main-ac;
     margin-top: 2px;
@@ -73,14 +73,14 @@
 
   &__buy {
     width: 100%;
-    height: 40px;
-    border-radius: 5px;
+    height: $spacing-xl;
+    border-radius: $border-radius-s;
     background-color: $blue;
     text-decoration: none;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
     text-align: center;
     text-transform: uppercase;
     color: $white;

@@ -1,6 +1,39 @@
-$card-width: 200px;
+// Colors
 $blue: #00acdc;
 $border: #f3f3f3;
 $main-ac: #060b35;
 $secondary: #616070;
 $white: #fff;
+
+// Dimensions & Spacing
+$card-width: 200px;
+$card-padding: 16px;
+$border-radius-s: 5px;
+
+$spacing-xs: 4px;
+$spacing-s: 8px;
+$spacing-m: 16px;
+$spacing-l: 24px;
+$spacing-xl: 40px;
+
+// Typography - Font Sizes
+$font-size-xs: 10px;
+$font-size-s: 12px;
+$font-size-m: 14px;
+$font-size-l: 16px;
+
+// Typography - Line Heights
+$line-height-s: 14px;
+$line-height-m: 16px;
+$line-height-l: 18px;
+
+// Typography - Weights
+$font-weight-reg: 400;
+$font-weight-med: 500;
+$font-weight-bold: 700;
+
+// Component Specific
+$img-width: 160px;
+$img-height: 134px;
+$star-size: 16px;
+$star-spacing: 4px;
